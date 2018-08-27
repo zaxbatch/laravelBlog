@@ -5,14 +5,20 @@
 
 
 
-Route::get('/', 'TopicsController@home');
+Route::get('/', 'PostsController@home');
 
-Route::get('/categories', 'TopicsController@categories');
+Route::get('/categories', 'PostsController@categories');
 
-Route::get('/categories/{topics}', 'TopicsController@id');
+Route::get('/articles', 'PostsController@articles');
 
-Route::get('/subscribe', 'TopicsController@subscribe');
+Route::get('/categories/{topics}', 'PostsController@id');
 
-Route::get('/thanks', 'TopicsController@thanks');
+Route::get('/subscribe', 'PostsController@subscribe');
+
+Route::get('/thanks', 'PostsController@thanks');
+
+Route::get('/posts/create', 'PostsController@create');
+
+Route::post('/posts', 'PostsController@store');
 
 

@@ -3,8 +3,9 @@
 @section ('content')
     <div class="container">
       <br>
-      <h1>Topic: {{ $id->topic }}</h1>
-      <h2>Title: {{ $id->title }}</h2>
+      <h1>Title: {{ $id->title }}</h1>
+      <h2>Topic: {{ $id->topic }}</h2>
+      <p>Content: {{ $id->body }}</p>
     </div>
 
     <!-- footer -->
