@@ -12,10 +12,10 @@
     <title>Blog</title>
   </head>
   <body>
-    <!-- Navbar content -->
+    <!-- Navbar content     -->  
     @include ('layouts.nav')
+    
 
-        
     
       <!-- content -->
       @yield ('content')

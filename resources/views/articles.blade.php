@@ -6,8 +6,8 @@
       <h1>Articles</h1>
       <div>
           <ul>
-          @foreach ($topics as $topic)
-            <li><a href="/articles/{{ $topic->id }}">{{ $topic->title }}</a></li>
+          @foreach ($posts as $post)
+            <li><a href="/posts/{{ $post->id }}">{{ $post->title }}</a></li>
           @endforeach
         </ul>
       </div>

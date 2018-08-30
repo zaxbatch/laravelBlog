@@ -12,13 +12,17 @@
         <hr>      
         <h7>Articles</h7>
         <ul>
-          
+          @foreach ($topics as $topic)
+            <li><a href="/articles/{{ $topic->id }}">{{ $topic->title }}</a></li>
+          @endforeach
         </ul>
-      
+      <!--
         <h7>Categories</h7>
         <ul>
-        </ul>
-      
+          @foreach ($topics as $topic)
+            <li><a href="/categories/{{ $topic->id }}">{{ $topic->topic }}</a></li>
+          @endforeach
+      -->
 
           
 

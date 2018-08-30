@@ -7,15 +7,22 @@
     </div>
     <div class="container">
       <hr>
-      <form action="/thanks">
+      <form class="form-group" "method="POST" action="/thanks">
+
+          
+
+
         <label>name</label>
-        <input type="text" name="name">
+        <input type="text" name="name" id="name">
         <br>
         <label>email</label>
-        <input type="email" name="email">
+        <input type="email" name="email" id="email">
         <br>
         <button>Submit</button>
       </form>
+      <div>
+        @include ('layouts.error')
+      </div>
     </div>
 @endsection
 

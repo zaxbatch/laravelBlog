@@ -6,9 +6,10 @@
 	<br>
       <h1>What's happening?</h1>
       <div >
-        <form method="POST" action="/posts">
+        <form class="form-group" method="POST" action="/posts">
         	
           {{csrf_field() }}
+          
 
           <label for="title">Title</label><br>
         	<input type="text" name="title" class="form-control" id="title"><br><br>
@@ -20,5 +21,10 @@
         </form>
           
       </div>
+      <div>
+        
+      </div>
 </div>
+
+
 @endsection
