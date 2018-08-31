@@ -83,6 +83,7 @@ class PostsController extends Controller
     
     public function create()
     {
+      
         $topics= Posts::all();
         return view('create', compact('topics'));;
     }   
@@ -91,9 +92,9 @@ class PostsController extends Controller
     public function store()
     {
         $this->validate( request(), [
-                'title' => 'required',
-                'topic' => 'required',
-                'body' => 'required'
+                'title' => 'required|min:2',
+                'topic' => 'required|min:2',
+                'body' => 'required|min:2'
             ]);
 
         Posts::create([
@@ -114,6 +115,8 @@ class PostsController extends Controller
         return view('posts.show', compact('post', 'posts'));
     }
 
-    
+
+
+     
 
 }
